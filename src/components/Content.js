@@ -6,6 +6,7 @@ import {
   Javascript as JsIcon,
 } from "@mui/icons-material";
 import Home from "./profile/Home";
+import Info from "./profile/Info";
 const Content = ({ selectedCategory }) => {
   const renderContent = () => {
     switch (selectedCategory) {
@@ -13,8 +14,8 @@ const Content = ({ selectedCategory }) => {
         return <Home />;
 
       case "profile":
-        return <h1>Profile</h1>;
-      
+        return <Info />;
+
       case "analytics":
         return <h1>Analytics Page</h1>;
       case "tasks":

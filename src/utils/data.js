@@ -91,6 +91,7 @@ const courses = [
       "Functions",
       "Working with files",
     ],
+    recommend: true
   },
   {
     id: "VwkN_o",
@@ -153,6 +154,8 @@ const courses = [
       "Efficiency and testing",
       "Conclusion",
     ],
+    
+    recommend: true
   },
   {
     id: "qjdYG4",
@@ -231,6 +234,8 @@ const courses = [
       "CSS3 Flexbox",
       "Responsive Web Design",
     ],
+    
+    recommend: true
   },
   {
     id: "RuUs0x",
@@ -371,6 +376,8 @@ const courses = [
       "Model maintenance",
       "SQL Programming for Data Science",
     ],
+    
+    recommend: true
   },
   {
     id: "9Ui0L1",

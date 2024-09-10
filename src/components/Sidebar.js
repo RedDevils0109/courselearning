@@ -73,6 +73,10 @@ const SidebarWrapper = styled.div`
   &.show-sidebar {
     transform: translateX(0);
   }
+  h6 {
+  font-weight: bold;
+ 
+  }
 
   .sidebar-close-btn {
     position: absolute;

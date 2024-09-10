@@ -24,7 +24,7 @@ const Navbar = () => {
             {isLogin ? (
               <>
                 <Link to="/profile" className="icon-link">
-                  <MdPortrait className="icon" />
+                  <MdPortrait className="icon-profile" />
                 </Link>
                 <Link to="/cart" className="cart-btn icon-link">
                   <MdShoppingCart className="icon" />
@@ -61,11 +61,15 @@ const NavbarWrapper = styled.nav`
     display: flex;
     align-items: center; /* Vertically center the icons */
   }
-
-  .icon {
+  .icon-profile {
     height: 30px; /* Set a consistent height */
     width: 30px; /* Set a consistent width */
     margin-right: 30px;
+  }
+  .icon {
+    height: 30px; /* Set a consistent height */
+    width: 30px; /* Set a consistent width */
+    margin-right: 10  px;
   }
   height: 80px;
   box-shadow: rgba(50, 50, 93, 0.15) 0px 16px 12px -2px,
