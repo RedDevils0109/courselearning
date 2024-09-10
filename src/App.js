@@ -10,6 +10,7 @@ import {
   SignUpPage,
   Profile,
 } from "./pages";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 
@@ -27,6 +28,7 @@ function App() {
         <Route path="/signup" element={<SignUpPage />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
