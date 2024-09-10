@@ -50,18 +50,6 @@ const SideNavBar = ({ onCategoryClick }) => {
             </a>
           </li>
           <li>
-            <a href="#" onClick={() => onCategoryClick("tasks")}>
-              <TasksIcon />
-              <span className="nav-item">Tasks</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" onClick={() => onCategoryClick("settings")}>
-              <SettingsIcon />
-              <span className="nav-item">Settings</span>
-            </a>
-          </li>
-          <li>
             <a href="#" className="logout" onClick={() => handleLogout()}>
               <LogoutIcon />
               <span className="nav-item">Log out</span>
