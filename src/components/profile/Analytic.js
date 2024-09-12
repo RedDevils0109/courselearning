@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Chart from "../Chart";
 import { userData } from "../../utils/progress";
-import { ArrowDownward, ArrowUpward } from "@mui/icons-material";
+import { ArrowDownward } from "@mui/icons-material";
 import MyPieChart from "../PieChart";
+import Barchart from "../Barchart";
 const Analytic = () => {
   return (
     <AnalyticWrapper>
@@ -32,12 +33,14 @@ const Analytic = () => {
         </div>
       </div>
       <Chart
+        title="Time Spent Learning"
         data={userData}
-        title="Learning Analytics"
-        grid
         dataKey="Time In Minute"
+        grid
+        yAxisLabel="Time In Minutes"
       />
       <MyPieChart />
+      <Barchart />
     </AnalyticWrapper>
   );
 };
