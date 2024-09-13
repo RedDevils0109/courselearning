@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import LinearProgress from "@mui/joy/LinearProgress";
 import { useCoursesContext } from "../../context/courses_context";
 
 const Home = () => {
@@ -70,17 +71,21 @@ const Home = () => {
               {filteredCourses.map((e) => {
                 return (
                   <div className="box" key={e.id}>
-                    <Link
-                      to={`/courses/${e.id}`}
-                     
-                    >
+                    <Link to={`/courses/${e.id}`}>
                       <h3>{e.course_name}</h3>
                     </Link>
                     <p>{e.creator}</p>
                     <img src={e.image} alt={e.course_name} />
                     {e.status && (
                       <p>
-                        {e.status === "In Progress" ? "80%" : "100%"} - Progress
+                        {e.status === "In Progress" ? (
+                          <>
+                            <LinearProgress determinate value={80} />
+                            <span>80% - Progress</span>
+                          </>
+                        ) : (
+                          "100%"
+                        )}
                       </p>
                     )}
                   </div>
