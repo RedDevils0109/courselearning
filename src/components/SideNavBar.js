@@ -27,7 +27,7 @@ const SideNavBar = ({ onCategoryClick }) => {
           <li>
             <a href="#" className="logo">
               <img src="/logo.png" alt="" />
-              <span className="nav-item">Welcome Home, Master!</span>
+              <span className="nav-item">Welcome Home, John!</span>
             </a>
           </li>
           <li>

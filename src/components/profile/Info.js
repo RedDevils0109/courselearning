@@ -37,7 +37,7 @@ const Info = () => {
           id="outlined-required"
           label="Email"
           type="email"
-          defaultValue="asdf.@gmail.com"
+          defaultValue="s4037882@rmit.edu.vn"
           sx={{
             width: "80%",
             mb: 4,
